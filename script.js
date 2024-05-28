@@ -36,12 +36,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const filterCareer = document.getElementById('filter-career');
     const filterSemester = document.getElementById('filter-semester');
 
+    // Hardcoded credentials for simplicity
+    const adminCredentials = {
+        username: 'admin',
+        password: 'password'
+    };
+
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        if (username === 'admin' && password === 'password') {
+        if (username === adminCredentials.username && password === adminCredentials.password) {
             loginContainer.style.display = 'none';
             mainContainer.style.display = 'flex';
             mainContainer.style.flexDirection = 'column';
