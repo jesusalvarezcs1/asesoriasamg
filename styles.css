@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#main-container, #login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#qr-code img {
+    margin-top: 10px;
+}
+
+#upload-message {
+    color: green;
+    margin-top: 10px;
+}
+
+#pdf-list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#pdf-list th, #pdf-list td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#pdf-list th {
+    background-color: #f2f2f2;
+}
+
+#pdf-list td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#pdf-list td a:hover {
+    text-decoration: underline;
+}
+
+#progress-container {
+    margin: 20px 0;
+}
+
+#search-box {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
